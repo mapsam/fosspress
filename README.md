@@ -1,4 +1,4 @@
-Wordpress theme for [Studio Skaggs Kennedy](http://studiosk.net).
+Wordpress theme for [Foss4gPDX](http://2014.foss4g.org).
 
 Main `WP_Query()` we use is below:
 
