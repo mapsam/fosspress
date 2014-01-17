@@ -1,0 +1,149 @@
+section {
+	display:block;
+	width:100%
+	margin:auto;
+}
+
+#landing-intro {
+	padding:100px 0 50px;
+	background:@c-blue-light2 url(img/landing-header-bg-repeater.jpg) center center repeat;
+	text-align:center;
+	border-bottom:10px solid @c-blue;
+	img {
+		.center-block();
+	}
+	#conference-info {
+		text-align:left;
+		margin:90px 0 0;
+		text-align:left;
+		h2 {
+			color:@c-grey-light;
+			font-weight:700;
+			font-size:2.5em;
+			margin-bottom:16px;
+		}
+		#conference-times {
+			margin-bottom:20px;
+			border-left:5px solid @c-blue-dark;
+			padding-left:10px;
+			p {
+				font-weight:700;
+				color:@c-grey;
+				&.larger {
+					font-size:1.4em;
+				}
+				span {
+					margin-left:10px;
+					font-weight:100;
+					font-style:italic;
+				}
+			}
+		}
+		button {
+			margin-right:10px;
+		}
+	}
+}
+
+#sponsors {
+	padding:20px 0 40px;
+	background-color:@c-med;
+	p {
+		.standard-landing-paragraph-bold();
+		margin-bottom:20px;
+	}
+	text-align:center;
+	#sponsor-slider {
+		margin:20px 0 0;
+	}
+	.carousel {
+		carousel-inner {
+			width:100%;
+			.sponsor-list {
+				text-align:center;
+			}
+		}
+		.carousel-indicators {
+			bottom:-40px;
+			li {
+				background-color:@c-blue;
+				border-color:@c-blue;
+				border-radius:none;
+			}
+		}
+	}
+}
+
+#featured-speakers {
+	padding:20px 0;
+	background:url(img/landing-speakers-bg-repeater.png) top left repeat;
+	.speaker {
+		margin-bottom:10px;
+		padding:10px;
+		.speaker-photo-container {
+			overflow:hidden;
+			border-radius:100px;
+			border:5px solid #fff;
+		}
+		h2 {
+			margin:2px 0 0;
+			text-transform:uppercase;
+			font-size:1.5em;
+			color:@c-red;
+		}
+		h3 {
+			margin:0;
+			font-size:1em;
+			font-weight:400;
+			text-transform:none;
+		}
+		p {
+			.standard-landing-paragraph();
+		}
+	}
+}
+
+#recent {
+	background-color:lighten(@c-blue, 30%);
+	padding:20px 0;
+}
+#landing-posts {
+	.landing-post-meta {
+		padding:0;
+		margin-bottom:10px;
+		border-bottom:1px solid @c-blue;
+		h1 {
+			margin:0 0 5px;
+			font-size:2em;
+			a {
+				color:@c-grey;
+				text-decoration:none;
+				&:hover {
+					text-decoration:underline;
+				}
+			}
+		}
+		h2 {
+			margin:0 0 5px;
+			font-size:.8em;
+			text-transform:uppercase;
+			color:@c-blue-dark;
+			span {
+				margin:0 0 0 10px;
+				color:@c-grey;
+				font-weight:300;
+				text-transform:uppercase;
+			}
+		}
+	}
+	.landing-post-content {
+		margin-bottom:30px;
+		p {
+			margin-bottom:10px;
+		}
+	}
+}
+
+
+
+
