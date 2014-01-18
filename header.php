@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width" charset="UTF-8">
-<title>Atlas of Design</title>
+<title>Foss4gPDX 2014</title>
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <!--[if IE]>
@@ -35,8 +35,20 @@
 			        'walker'            => new wp_bootstrap_navwalker())
 			    );
 			?>
-			<ul class="nav navbar-nav navbar-right">
-	        	<li><a href="#">Login</a></li>
+          <ul class="nav navbar-nav navbar-right">
+	        	<?php
+              if ( is_user_logged_in() ) {
+              $user = wp_get_current_user();
+              $logged_in = '<li><a href="#">' . $user->user_firstname . '</a></li>';
+              $logged_in .= '<li><a href="' . wp_logout_url( home_url() ) . '" title="Logout">Logout</a></li>';
+              echo $logged_in; }
+              else {
+              $not_logged_in = '<li><a href="' . wp_registration_url( home_url() ) . '">Register</a></li>';
+              $not_logged_in .= '<li><a href="' . wp_login_url( home_url() ) . '">Login</a></li>';
+              echo $not_logged_in;
+
+              }
+            ?>
 	      	</ul>         
         </div><!-- /.navbar-collapse -->
       </nav>
