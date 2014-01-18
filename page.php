@@ -12,7 +12,7 @@
            	<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 sidebar">
         	<?php get_sidebar(); ?>
         </div>
     </div>

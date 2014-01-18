@@ -6389,6 +6389,16 @@ Single Post & Page
 .page-header.post h1 {
   font-size: 3.0em;
 }
+.content {
+  margin: 15px 0;
+}
+#ws-plugin--s2member-profile table label {
+  font-size: 1.3em;
+  font-weight: 100;
+}
+#ws-plugin--s2member-profile table input {
+  margin: 0 0 15px;
+}
 /* Footer */
 footer {
   background-color: #99e5e5;
