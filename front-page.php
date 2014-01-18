@@ -144,13 +144,7 @@
             </div>
             <div class="col-sm-4" id="landing-side">
               <aside>
-                <ul>
-                  <li><a href="#">Sidebar Link</a></li>
-                  <li><a href="#">Sidebar Link</a></li>
-                  <li><a href="#">Sidebar Link</a></li>
-                  <li><a href="#">Sidebar Link</a></li>
-                  <li><a href="#">Sidebar Link</a></li>
-                </ul>
+                <?php get_sidebar(); ?>
               </aside>
             </div>
           </div>
