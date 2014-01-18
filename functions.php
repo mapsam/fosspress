@@ -70,6 +70,16 @@
 			'section' 		=> 'foss4g2014_header',
 			'priority' 		=> 25,
 		) );
+		$wp_customize->add_setting('foss4g2014_workshop_display', array(
+	        'default' 		=> 0,
+		    ));
+	    $wp_customize->add_control('foss4g2014_workshop_display', array(
+	        'settings' 		=> 'foss4g2014_workshop_display',
+	        'label'    		=> 'Hide Workshop Info',
+	        'section'  		=> 'foss4g2014_header',
+	        'type'     		=> 'checkbox',
+	        'priority'		=> 26,
+	    ));
 
 		// registration deadlines
 		$wp_customize->add_setting( 'foss4g2014_registration_title', array(
@@ -88,6 +98,16 @@
 			'section' 		=> 'foss4g2014_header',
 			'priority' 		=> 35,
 		) );
+		$wp_customize->add_setting('foss4g2014_registration_display', array(
+	        'default' 		=> 0,
+		    ));
+	    $wp_customize->add_control('foss4g2014_registration_display', array(
+	        'settings' 		=> 'foss4g2014_registration_display',
+	        'label'    		=> 'Hide Registration Info',
+	        'section'  		=> 'foss4g2014_header',
+	        'type'     		=> 'checkbox',
+	        'priority'		=> 36,
+	    ));
 
 		// submission deadlines
 		$wp_customize->add_setting( 'foss4g2014_submission_title', array(
@@ -106,12 +126,38 @@
 			'section' 		=> 'foss4g2014_header',
 			'priority' 		=> 45,
 		) );
+		$wp_customize->add_setting('foss4g2014_submission_display', array(
+	        'default' 		=> 0,
+		    ));
+	    $wp_customize->add_control('foss4g2014_submission_display', array(
+	        'settings' 		=> 'foss4g2014_submission_display',
+	        'label'    		=> 'Hide Submission Info',
+	        'section'  		=> 'foss4g2014_header',
+	        'type'     		=> 'checkbox',
+	        'priority'		=> 46,
+	    ));
 
 		// register section for conference times
 		$wp_customize->add_section( 'foss4g2014_header', array(
 	        'title' 		=> 'Conference Date Information',
 	        'description' 	=> 'Located under landing page headline and footer',
 	        'priority' 		=> 110,
+	    ) );
+
+	// ABBREV. DESCRIPTION
+		$wp_customize->add_setting( 'foss4g2014_desc_text', array(
+			'default' 		=> 'foss4g2014 description',
+		) );
+		$wp_customize->add_control( 'foss4g2014_desc_text', array(
+			'label' 		=> 'Description below title',
+			'section' 		=> 'foss4g2014_desc',
+			'priority' 		=> 1,
+		) );
+		// description section
+		$wp_customize->add_section( 'foss4g2014_desc', array(
+	        'title' 		=> 'Description',
+	        'description' 	=> 'Description section',
+	        'priority' 		=> 120,
 	    ) );
 
 	// HERO
@@ -157,24 +203,10 @@
 		$wp_customize->add_section( 'foss4g2014_hero', array(
 	        'title' 		=> 'Hero',
 	        'description' 	=> 'Hero section',
-	        'priority' 		=> 120,
-	    ) );
-
-	// ABBREV. DESCRIPTION
-		$wp_customize->add_setting( 'foss4g2014_desc_text', array(
-			'default' 		=> 'foss4g2014 description',
-		) );
-		$wp_customize->add_control( 'foss4g2014_desc_text', array(
-			'label' 		=> 'Description below title',
-			'section' 		=> 'foss4g2014_desc',
-			'priority' 		=> 1,
-		) );
-		// description section
-		$wp_customize->add_section( 'foss4g2014_desc', array(
-	        'title' 		=> 'Description',
-	        'description' 	=> 'Description section',
 	        'priority' 		=> 130,
 	    ) );
+
+	
 
 	
 	}

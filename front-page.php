@@ -9,11 +9,12 @@
             </div>
             <div class="col-sm-6">
               <div class="col-sm-12" id="conference-info">
-                <h2>Be a part of open geo.</h2>
+                <h2><?php get_bloginfo('description'); ?></h2>
                 <div id="conference-times">
-                  <p class="larger">Main Conference: <span class="date"><?php echo get_theme_mod( 'aod_button_text' ); ?></span></p>
-                  <p>Registration Begins: <span class="date">Another Date</span></p>
-                  <p>Submissions Due: <span class="date">One More Date</span></p>
+                  <p class="larger"><?php echo get_theme_mod( 'foss4g2014_conference_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_conference_date' ); ?></span></p>
+                  <p <?php echo ( get_theme_mod( 'foss4g2014_registration_display' ) ) ? "style='display:none;'" : "" ?> ><?php echo get_theme_mod( 'foss4g2014_registration_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_registration_date' ); ?></span></p>
+                  <p <?php echo ( get_theme_mod( 'foss4g2014_submission_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_submission_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_submission_date' ); ?></span></p>
+                  <p <?php echo ( get_theme_mod( 'foss4g2014_workshop_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_workshop_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_workshop_date' ); ?></span></p>
                 </div>
                 <button type="button" class="btn btn-lg btn-alert">Register</button>
                 <button type="button" class="btn btn-lg btn-primary">Submit Proposals</button>
