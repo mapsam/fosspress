@@ -144,17 +144,27 @@
 	        'priority' 		=> 110,
 	    ) );
 
-	// ABBREV. DESCRIPTION
-		$wp_customize->add_setting( 'foss4g2014_desc_text', array(
+	// DESCRIPTION
+		$wp_customize->add_setting( 'foss4g2014_description', array(
 			'default' 		=> 'foss4g2014 description',
 		) );
-		$wp_customize->add_control( 'foss4g2014_desc_text', array(
-			'label' 		=> 'Description below title',
-			'section' 		=> 'foss4g2014_desc',
-			'priority' 		=> 1,
+		$wp_customize->add_control( 'foss4g2014_description', array(
+			'label' 		=> 'Description Text',
+			'section' 		=> 'foss4g2014_description',
+			'priority' 		=> 10,
 		) );
+		$wp_customize->add_setting('foss4g2014_description_display', array(
+	        'default' 		=> 0,
+		    ));
+	    $wp_customize->add_control('foss4g2014_description_display', array(
+	        'settings' 		=> 'foss4g2014_description_display',
+	        'label'    		=> 'Hide Submission Info',
+	        'section'  		=> 'foss4g2014_description',
+	        'type'     		=> 'checkbox',
+	        'priority'		=> 20,
+	    ));
 		// description section
-		$wp_customize->add_section( 'foss4g2014_desc', array(
+		$wp_customize->add_section( 'foss4g2014_description', array(
 	        'title' 		=> 'Description',
 	        'description' 	=> 'Description section',
 	        'priority' 		=> 120,

@@ -6230,6 +6230,25 @@ section {
 #landing-intro #conference-info button {
   margin-right: 10px;
 }
+#landing-intro #description {
+  border-top: 1px solid #33cbcb;
+  margin-top: 25px;
+  padding-top: 15px;
+}
+#landing-intro #description p {
+  font-size: 1.8em;
+  font-weight: 100;
+  color: #555555;
+  font-style: italic;
+}
+#portland-image {
+  height: 200px;
+  background: url(img/portland-aerial-cropped.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 #sponsors {
   padding: 20px 0 40px;
   background-color: #f2ebdf;

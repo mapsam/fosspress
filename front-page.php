@@ -21,8 +21,19 @@
               </div>
             </div>
           </div> <!-- /row -->
+          <div class="row" <?php echo ( get_theme_mod( 'foss4g2014_description_display' ) ) ? "style='display:none;'" : "" ?>>
+            <div class="col-sm-2">  
+            </div>
+            <div class="col-sm-8" id="description">
+                <p><?php echo get_theme_mod( 'foss4g2014_description' ); ?></p>
+            </div>
+            <div class="col-sm-2">  
+            </div>
+          </div>
       	</div> <!-- /container -->
       </section> <!-- /landing-intro -->
+
+      <section id="portland-image"></section>
 
       <section id="sponsors" class="">
         <div class="container">
