@@ -33,9 +33,7 @@
       	</div> <!-- /container -->
       </section> <!-- /landing-intro -->
 
-      <section id="portland-image"></section>
-
-      <section id="sponsors" class="">
+      <section id="sponsors" class="" style="display:none">
         <div class="container">
           <div id="featured-sponsors">
             <p>Presented By:</p>
@@ -124,6 +122,9 @@
           </div>
         </div>
       </section>
+
+      <section id="portland-image"></section>
+
       <section id="recent">
         <div class="container">
           <div class="row">

@@ -6309,6 +6309,12 @@ section {
   background-color: #eafafa;
   padding: 20px 0;
 }
+#landing-posts {
+  margin-top: -60px;
+  padding-top: 10px;
+  border-radius: 3px;
+  background-color: #eafafa;
+}
 #landing-posts .landing-post-meta {
   padding: 0;
   margin-bottom: 10px;
@@ -6419,6 +6425,72 @@ Single Post & Page
   margin: 0 0 15px;
 }
 /* Footer */
+#contact {
+  position: relative;
+  bottom: 0;
+  height: 250px;
+  width: 300px;
+  margin-top: -200px;
+}
+#contact #contact-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#contact #contact-container #contact-form-button {
+  width: 120px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  background-color: #99e5e5;
+  color: #555555;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px;
+}
+#contact #contact-container #contact-form-button .nav-arrow {
+  font-size: 0.8em;
+}
+#contact #contact-container #contact-form-button .nav-arrow.hide {
+  display: none;
+}
+#contact #contact-container #contact-form-button:hover {
+  background-color: #84e0e0;
+}
+#contact #contact-container #contact-form {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: #99e5e5;
+  padding: 10px;
+}
+#contact #contact-container #contact-form .ninja-forms-required-items {
+  display: none;
+}
+#contact #contact-container #contact-form input,
+#contact #contact-container #contact-form label,
+#contact #contact-container #contact-form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+}
+#contact #contact-container #contact-form label {
+  margin: 0 0 2px 0;
+}
+#contact #contact-container #contact-form input {
+  margin: 0 0 7px 0;
+}
+#contact #contact-container #contact-form input[type="submit"] {
+  margin-top: 10px;
+  width: 40%;
+  background-color: #e08383;
+}
+#contact #contact-container #contact-form input[type="submit"]:hover {
+  background-color: #db6f6f;
+}
 footer {
   background-color: #99e5e5;
   padding: 20px 0 20px;
