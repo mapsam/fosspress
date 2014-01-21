@@ -8,6 +8,7 @@
 <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<?php wp_head() ?>
 </head>
 <body class="" id="">
     <div class="outer-container">

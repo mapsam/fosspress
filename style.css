@@ -6227,8 +6227,13 @@ section {
   font-weight: 100;
   font-style: italic;
 }
-#landing-intro #conference-info button {
+#landing-intro #conference-info a.btn {
   margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+#landing-intro #conference-info a.btn:hover {
+  opacity: 0.8;
 }
 #landing-intro #description {
   border-top: 1px solid #33cbcb;
@@ -6429,7 +6434,7 @@ Single Post & Page
   position: relative;
   bottom: 0;
   height: 250px;
-  width: 300px;
+  width: 280px;
   margin-top: -200px;
 }
 #contact #contact-container {
@@ -6494,7 +6499,7 @@ Single Post & Page
 footer {
   background-color: #99e5e5;
   padding: 20px 0 20px;
-  border-bottom: 5px solid #70dbdb;
+  border-bottom: 5px solid #33cbcb;
 }
 footer p {
   margin-bottom: .1em;

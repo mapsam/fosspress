@@ -11,7 +11,7 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="pull-right">
+        <div class="col-md-6">
             <p>FOSS4G 2014 is a production of the <a href="http://www.osgeo.org/">OSGeo</a> organization. </p>
             <p>Site built by <a href="http://cugos.org">CUGOS</a> using <a href="#">Wordpress</a>.</p>
         </div>   

@@ -16,8 +16,8 @@
                   <p <?php echo ( get_theme_mod( 'foss4g2014_submission_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_submission_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_submission_date' ); ?></span></p>
                   <p <?php echo ( get_theme_mod( 'foss4g2014_workshop_display' ) ) ? "style='display:none;'" : "" ?>><?php echo get_theme_mod( 'foss4g2014_workshop_title' ); ?> <span class="date"><?php echo get_theme_mod( 'foss4g2014_workshop_date' ); ?></span></p>
                 </div>
-                <button type="button" class="btn btn-lg btn-alert">Register</button>
-                <button type="button" class="btn btn-lg btn-primary">Submit Proposals</button>
+                <a href="<?php echo get_theme_mod( 'foss4g2014_button_one_link' ); ?>" <?php echo ( get_theme_mod( 'foss4g2014_button_one_display' ) ) ? "style='display:none;'" : "" ?> type="button" class="btn btn-lg" id="button-one"><?php echo get_theme_mod( 'foss4g2014_button_one_text' ); ?></a>
+                <a href="<?php echo get_theme_mod( 'foss4g2014_button_two_link' ); ?>" <?php echo ( get_theme_mod( 'foss4g2014_button_two_display' ) ) ? "style='display:none;'" : "" ?> type="button" class="btn btn-lg" id="button-two"><?php echo get_theme_mod( 'foss4g2014_button_two_text' ); ?></a>
               </div>
             </div>
           </div> <!-- /row -->
@@ -143,7 +143,7 @@
                         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                         <h2>By FOSS4G UPDATES <span class="date"><?php the_date(); ?></span></h2>
                       </div>
-                      <div class="col-sm-11 col-sm-offset-1 landing-post-content">
+                      <div class="col-sm-11 landing-post-content">
                         <?php the_content(); ?>
                       </div>
                     </div>
